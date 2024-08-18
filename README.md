@@ -1,3 +1,26 @@
+## foonathan_memory_vendor (humble) - 1.3.1-1
+
+The packages in the `foonathan_memory_vendor` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release --ros-distro humble foonathan_memory_vendor --override-release-repository-push-url git@github.com:revyos-ros/foonathan_memory_vendor-release.git` on `Sun, 18 Aug 2024 14:37:38 -0000`
+
+The `foonathan_memory_vendor` package was released.
+
+Version of package(s) in repository `foonathan_memory_vendor`:
+
+- upstream repository: https://github.com/eProsima/foonathan_memory_vendor.git
+- release repository: https://github.com/revyos-ros/foonathan_memory_vendor-release.git
+- rosdistro version: `1.2.0-3`
+- old version: `1.2.2-1`
+- new version: `1.3.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## foonathan_memory_vendor (rolling) - 1.3.1-1
 
 The packages in the `foonathan_memory_vendor` repository were released into the `rolling` distro by running `/usr/local/bin/bloom-release -r rolling foonathan_memory_vendor` on `Wed, 10 May 2023 14:38:27 -0000`
