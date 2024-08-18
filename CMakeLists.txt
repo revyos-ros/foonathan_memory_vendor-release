@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(foonathan_memory_vendor VERSION "1.2.2")
+project(foonathan_memory_vendor VERSION "1.3.1")
 
 find_package(foonathan_memory QUIET)
 
@@ -64,6 +64,9 @@ if(NOT foonathan_memory_FOUND)
         list(APPEND extra_cmake_args "-DANDROID_TOOLCHAIN_NAME=${ANDROID_TOOLCHAIN_NAME}")
       endif()
     endif()
+    if(QNX)
+      list(APPEND extra_cmake_args "-DCMAKE_SYSTEM_PROCESSOR=${CPUVARDIR}")
+    endif()
   endif()
   include(ExternalProject)
 
@@ -75,7 +78,7 @@ if(NOT foonathan_memory_FOUND)
 
   externalproject_add(foo_mem-ext
   GIT_REPOSITORY https://github.com/foonathan/memory.git
-  GIT_TAG v0.7-1
+  GIT_TAG v0.7-3
   TIMEOUT 600
   # Avoid the update (git pull) and so the recompilation of foonathan_memory library each time.
   UPDATE_COMMAND ""
